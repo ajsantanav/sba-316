@@ -1,0 +1,20 @@
+:root {
+  --hunter-green: #386641;
+  --asparagus: #6A994E;
+  --yellow-green: #A7C957;
+  --parchment: #F2E8CF;
+  --bittersweet: #BC4749;
+}
+
+
+body {
+    background: rgb(82, 151, 82);
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+.container {
+    margin: auto;
+    padding: auto;
+}
