@@ -6,8 +6,8 @@
   --burntsel: #E07A5F;
 }
 
-
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: var(--green-blueish);
   color: whitesmoke;
   margin: 0;
@@ -27,8 +27,22 @@ nav > ul {
   list-style-type: none;
 }
 
+#h1Welcome {
+  text-align: center;
+}
 
 .container {
-  margin: 1vw;
-  padding: 0 auto;
+  display: flex;
+  justify-content: center space-between;
+  position: relative;
+  align-items: center;
 }
+
+.block {
+  width: 40vw;
+  height: 60vh;
+  margin: 5vh 5vw;
+  padding: 0 auto;
+  border: solid black 1px;
+}
+
