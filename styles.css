@@ -1,14 +1,34 @@
+/* Other color palette
 :root {
   --defblue: #3D405B;
   --green-blueish: #81B29A;
   --sunsent: #F2CC8F;
   --eggshell: #F4F1DE;
   --burntsel: #E07A5F;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --ox-blue: #00243F;
+  --indigo-1: #013A63;
+  --indigo-2: #01497C;
+  --indigo-3: #014F86;
+  --ucla-blue: #2A6F97;
+  --cerulean: #2C7DA0;
+  --air-force: #468FAF;
+  --air-superiority: #61A5C2;
+  --sky-blue: #89C2D9;
+  --light-blue: #A9D6E5;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: var(--green-blueish);
+  background: #013A63;
   color: whitesmoke;
   margin: 0;
   padding: 0;
@@ -29,20 +49,50 @@ nav > ul {
 
 #h1Welcome {
   text-align: center;
+  margin-top: 2vh;
 }
 
 .container {
   display: flex;
-  justify-content: center space-between;
+  justify-content: center space-evenly;
   position: relative;
   align-items: center;
+}
+.slideShowContainer{
+  width: 40vw;
+  height: 60vh;
+  margin: 2vh auto;
+  border: solid black 1px;
 }
 
 .block {
   width: 40vw;
   height: 60vh;
-  margin: 5vh 5vw;
-  padding: 0 auto;
+  margin: 2vh auto;
   border: solid black 1px;
 }
+/* Image CSS */
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
+.slideShow {
+  display: none;
+}
+
+
+/* Animations */
+.fadeInOut {
+  animation: fadeInOut ease-in-out 1.5s;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: .30;
+  }
+  to {
+    opacity: 1;
+  }
+}
