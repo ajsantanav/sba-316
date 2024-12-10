@@ -11,8 +11,6 @@
   box-sizing: border-box;
 }
 
-
-
 :root {
   --ox-blue: #00243F;
   --indigo-1: #013A63;
@@ -75,6 +73,14 @@ nav > ul {
   margin: 1vh auto;
   padding: 1vh 1vw;
   border: solid black 1px;
+}
+#formId {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  margin: auto;
 }
 #list-id {
   display: flex;

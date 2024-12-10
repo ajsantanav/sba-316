@@ -4,19 +4,18 @@ const xmasObj = {
     christmas: ["Ornaments", "Pine trees", "Gift", "Snow", "Coca Cola", "lights"],
     foods: ["Eggnog", "Candy cane", "Gingerbread cookies", "Ham", "Christmas Bread"]
 }
-
-// Variables
+//regular variables
 let slideIdx = 0;
+// DOM Variables
 const navEl = document.querySelector('nav');
-
+const populateList = document.getElementById('list-id');
+const buttonPo = document.getElementById('btn-id');
 // //Nav Bar
 navEl.style.backgroundColor = "#00243F";
 
-// //Body
-
-// for() {
-
-// }
+// buttonPo.addEventListener('click', () => {
+    
+// })
 
 //calls function otherwise wont show images
 slideShow()
