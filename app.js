@@ -1,8 +1,12 @@
 // Object to make 
 const xmasObj = {
     season: "winter",
-    christmas: ["Ornaments", "Pine trees", "Gift", "Snow", "Coca Cola", "lights"],
+    christmas: ["Ornaments", "Pine trees", "Gift", "Snow", "Coca Cola", "Lights"],
     foods: ["Eggnog", "Candy cane", "Gingerbread cookies", "Ham", "Christmas Bread"]
+}
+
+const navObj = {
+    nav: ["Home"],
 }
 //regular variables
 let slideIdx = 0;
@@ -10,15 +14,59 @@ let slideIdx = 0;
 const navEl = document.querySelector('nav');
 const populateList = document.getElementById('list-id');
 const buttonPo = document.getElementById('btn-id');
+const clearBtn = document.getElementById('clr-id');
+const radios = document.getElementById('foods');
+const radios2 = document.getElementById('christmas');
+const darkMode = document.getElementById('colorChange');
 // //Nav Bar
-navEl.style.backgroundColor = "#00243F";
-
-// buttonPo.addEventListener('click', () => {
-    
-// })
-
+//Button actions
+buttonPo.addEventListener('click', getXmas)
+clearBtn.addEventListener('click', clearData);
 //calls function otherwise wont show images
 slideShow()
+
+// navObj.nav.forEach(elm => {
+//     const navLi = document.createElement('li');
+//     navLi.textContent = elm;
+//     navEl.appendChild(navLi)
+// })
+
+darkMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode')
+    if(darkMode.textContent === "Dark Mode") {
+        darkMode.textContent = "Light Mode";
+    }
+    else {
+        darkMode.textContent = "Dark Mode";
+    }
+})
+
+
+function getXmas() {
+    populateList.innerHTML = null;
+    if(radios.checked) {
+        xmasObj.foods.forEach(element => {
+            const li = document.createElement('li');
+            li.textContent = element;
+            console.log(li);
+            populateList.appendChild(li)
+        });
+    }
+    else {
+        xmasObj.christmas.forEach(element => {
+            const li = document.createElement('li');
+            li.textContent = element;
+            console.log(li);
+            populateList.appendChild(li)
+        });
+    }
+
+}
+
+function clearData() {
+
+    populateList.innerHTML = null;
+}
 
 // SlideShow Function
 function slideShow() { 
