@@ -52,13 +52,16 @@ function getXmas() {
             populateList.appendChild(li)
         });
     }
-    else {
+    else if (radios2.checked) {
         xmasObj.christmas.forEach(element => {
             const li = document.createElement('li');
             li.textContent = element;
             console.log(li);
             populateList.appendChild(li)
         });
+    }
+    else {
+        populateList.innerHTML = null;
     }
 
 }

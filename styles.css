@@ -35,10 +35,10 @@
 }
 .dark-mode {
   --background-color: var(--indigo-2);
-  --text-color: var(--light-blue);
+  --text-color: whitesmoke;
   --nav-bar: var(--ox-blue);
   --accent-color: var(--indigo-1);
-  --accent-text: var(--sky-blue);
+  --accent-text: whitesmoke;
   --accent-hover: var(--air-superiority);
   --accent-htext: var(--indigo-1);
   --text-box: var(--indigo-3);
