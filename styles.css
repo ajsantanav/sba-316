@@ -34,7 +34,7 @@
   --text-box: var(--indigo-3);
 }
 .dark-mode {
-  --background-color: var(--indigo-2);
+  --background-color: var(--indigo-1);
   --text-color: whitesmoke;
   --nav-bar: var(--ox-blue);
   --accent-color: var(--indigo-1);
