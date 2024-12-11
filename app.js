@@ -51,6 +51,10 @@ function getXmas() {
             console.log(li);
             populateList.appendChild(li)
         });
+        const li = document.createElement('li');
+        li.textContent = populateList.children.length;
+        li.textContent = "The length of this Object Array is" + " " + populateList.children.length;
+        populateList.appendChild(li)
     }
     else if (radios2.checked) {
         xmasObj.christmas.forEach(element => {
@@ -59,6 +63,9 @@ function getXmas() {
             console.log(li);
             populateList.appendChild(li)
         });
+        const li = document.createElement('li');
+        li.textContent = "The length of this Object Array is" + " " + populateList.children.length;
+        populateList.appendChild(li)
     }
     else {
         populateList.innerHTML = null;
